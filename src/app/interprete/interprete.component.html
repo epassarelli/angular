@@ -1,0 +1,19 @@
+<ul>
+  <li *ngFor="let i of _is.interpretes"> 
+    {{ i.nombre }}
+  </li>
+ </ul>
+
+ <div class="row">
+
+  <div *ngFor="let i of _is.interpretes" class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="{{ i.foto }}" alt="{{ i.nombre }}">
+      <div class="caption">
+        <h3>{{ i.nombre }}</h3>
+        <p>{{ i.ciudad }}</p>
+      </div>
+    </div>
+  </div>
+
+</div>
